@@ -6,7 +6,7 @@ window.onload = () => {
     chars.forEach(element => {
         let el = document.getElementById(get_exclude_size_from_char_id(element));
         if (el != null) {
-            el.src = "../image/char/" + element + ".png";
+            el.src = "../image/char/" + get_exclude_size_from_char_id(element) + ".png";
         }
     });
 
