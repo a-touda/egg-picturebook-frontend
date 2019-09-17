@@ -9,11 +9,22 @@ window.onload = () => {
             el.src = "../image/char/" + element + ".png";
         }
     });
+
+    let cnt = document.getElementById("count");
+    cnt.innerText = distinct_chars_count();
 }
 
 // Charsを読み込む
 function load_chars() {
     return get_chars();
+}
+
+function on_fav_button() {
+    if (has_favorite_char(idVal)) {
+        remove_favorite_char(idVal);
+    } else {
+        set_favorite_char(idVal);
+    }
 }
 
 function on_return_title_button() {
