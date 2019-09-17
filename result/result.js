@@ -4,7 +4,7 @@ window.onload = () => {
     let id = get_egg_data();
     if (id != -1) {
         let elm = document.getElementById("char");
-        elm.src = "../image/char/" + get_exclude_size_from_char_id(id) + ".png";
+        elm.src = "../image/char/" + id + ".png";
 
         idVal = id;
 
