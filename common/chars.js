@@ -18,9 +18,6 @@ function has_char(id) {
 // 登録に成功した場合は、trueを返します。
 // キャラクターが重複して登録しようとすると、falseを返します。
 function set_char(id) {
-    if (localStorage.getItem("CharsList") == undefined)
-        localStorage.setItem("CharsList", JSON.stringify([]));
-
     if (has_char(id))
         return false;
 
@@ -60,16 +57,23 @@ function remove_egg_data() {
 
 // 図鑑のコンプリートチェック
 function book_comp() {
-    var list = get_chars();
-    var ev = [];
+    let list = get_chars();
+    let ev = [];
     list.forEach(element => {
-        var sid = get_exclude_size_from_char_id(element);
+        let sid = get_exclude_size_from_char_id(element);
         if (ev.indexOf(sid) == -1) {
             ev.push(sid);
         }
     });
 
     return ev.length >= 36;
+}
+
+function get_favorite_chars() {
+    if (localStorage.getItem("FavChar") == undefined)
+        localStorage.setItem("FavChar", JSON.stringify([]));
+
+    return JSON.parse(localStorage.getItem("FavChar"));
 }
 
 function has_favorite_char(id) {
@@ -80,7 +84,6 @@ function has_favorite_char(id) {
 }
 
 function set_favorite_char(id) {
-
     if (has_favorite_char(id))
         return false;
 
@@ -89,4 +92,12 @@ function set_favorite_char(id) {
     localStorage.setItem("FavChar", JSON.stringify(chars));
 
     return true;
+}
+
+function remove_favorite_char(id) {
+    if (has_favorite_char(id)) {
+        let chars = JSON.parse(localStorage.getItem("FavChar"));
+        let filter = chars.filter(n => n != id);
+        localStorage.setItem("FavChar", JSON.stringify(filter));
+    }
 }
