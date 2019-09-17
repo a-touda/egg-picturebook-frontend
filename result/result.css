@@ -10,5 +10,6 @@ p {
 }
 
 body {
+    margin: 0px,0px,10px,0px;
     background-color: #ffff99 !important
 }
