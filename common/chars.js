@@ -43,5 +43,13 @@ function set_egg_data(id) {
 
 // 一時的に保存した卵の情報を取得します。
 function get_egg_data() {
-    sessionStorage.getItem("EggData", id)
+    if (sessionStorage.getItem("EggData") == undefined)
+        return -1;
+
+    return sessionStorage.getItem("EggData", id)
+}
+
+function remove_egg_data() {
+    if (sessionStorage.getItem("EggData") != undefined)
+        sessionStorage.removeItem("EggData")
 }
