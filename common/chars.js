@@ -11,7 +11,7 @@ function has_char(id) {
     if (localStorage.getItem("CharsList") == undefined)
         localStorage.setItem("CharsList", JSON.stringify([]));
 
-    return localStorage.getItem("CharsList").search(id) != -1
+    return JSON.parse(localStorage.getItem("CharsList")).indexOf(id) != -1
 }
 
 // キャラクターを図鑑に登録します。
@@ -70,4 +70,23 @@ function book_comp() {
     });
 
     return ev.length >= 36;
+}
+
+function has_favorite_char(id) {
+    if (localStorage.getItem("FavChar") == undefined)
+        localStorage.setItem("FavChar", JSON.stringify([]))
+
+    return JSON.parse(localStorage.getItem("FavChar")).indexOf(id) != -1;
+}
+
+function set_favorite_char(id) {
+
+    if (has_favorite_char(id))
+        return false;
+
+    let chars = JSON.parse(localStorage.getItem("FavChar"));
+    chars.push(id)
+    localStorage.setItem("FavChar", JSON.stringify(chars));
+
+    return true;
 }
