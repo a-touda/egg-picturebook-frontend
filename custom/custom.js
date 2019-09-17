@@ -1,6 +1,7 @@
 window.onload = () => {
     let id = get_char_id_from_data(sizeVal, colorVal, patternVal);
     set_egg_data(id)
+    egg_update();
 }
 
 var sizeVal = 0;
@@ -41,6 +42,18 @@ function egg_update() {
     let id = get_char_id_from_data(sizeVal, colorVal, patternVal);
     set_egg_data(id)
 
+    let hint = document.getElementById("hint");
+
+    if (has_char(id)) {
+        hint.textContent = "あれ、見たことあるかも...？";
+        console.log("登録済み");
+    } else {
+        hint.textContent = "　";
+        console.log("登録していない");
+    }
+
+
     let elm = document.getElementById("egg");
     elm.src = "../image/egg/" + id + ".png";
+
 }
