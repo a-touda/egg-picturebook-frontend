@@ -101,3 +101,16 @@ function remove_favorite_char(id) {
         localStorage.setItem("FavChar", JSON.stringify(filter));
     }
 }
+
+function distinct_chars_count() {
+    let list = get_chars();
+    let ev = [];
+    list.forEach(element => {
+        let sid = get_exclude_size_from_char_id(element);
+        if (ev.indexOf(sid) == -1) {
+            ev.push(sid);
+        }
+    });
+
+    return ev.length;
+}

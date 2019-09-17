@@ -24,7 +24,7 @@ function on_fav_button() {
     if (has_favorite_char(idVal)) {
         remove_favorite_char(idVal);
     } else {
-        set_favorite_char(idVal)
+        set_favorite_char(idVal);
     }
 }
 
