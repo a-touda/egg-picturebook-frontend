@@ -36,5 +36,5 @@ function egg_update() {
     set_egg_data(id)
 
     let elm = document.getElementById("egg");
-    // Create Canvas
+    elm.src = "../image/egg/" + id + ".png";
 }
