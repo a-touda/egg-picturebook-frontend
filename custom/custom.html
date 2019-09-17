@@ -2,80 +2,134 @@
 <html lang="ja">
 
 <head>
-    <meta charset="utf-8">
-    <title>たまごずかん</title>
-    <link rel="stylesheet" href="custom.css">
+  <meta charset="utf-8">
+  <title>たまごずかん</title>
+  <link rel="stylesheet" href="custom.css">
 
-    <!-- マイライブラリ -->
-    <script src="../common/chars.js"></script>
+  <!-- マイライブラリ -->
+  <script src="../common/chars.js"></script>
 
-    <!-- コントロールスクリプト -->
-    <script src="custom.js"></script>
+  <!-- コントロールスクリプト -->
+  <script src="custom.js"></script>
 
-    <!-- ライブラリ -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  <!-- ライブラリ -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
     </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
 </head>
 
 <body>
-    <div class="container">
-        <div class="row text-center">
-            <div class="col-md-6"><img src="../image/cat.png" class = "text-center"></div>
-            <div class="col-md-6">
-              <div class="row text-center">
-                <div class="col-md-2"></div>
-                <div class="col-md-4">
-                  大きさ
-                </div>
-                <div class="col-md-4">
-                    <div class="btn-group" role="group" aria-label="Basic example">
-                        <button type="button" class="btn btn-primary">小</button>
-                        <button type="button" class="btn btn-primary">中</button>
-                        <button type="button" class="btn btn-primary">大</button>
-                      </div>
-                </div>
-                <div class="col-md-2"></div>
-              </div>
-              <div class="row text-center">
-                  <div class="col-md-2"></div>
-                  <div class="col-md-8">
-                    <img src="rgb.jpg">
-                  </div>
-                  <div class="col-md-2"></div>
-              </div>
-              <div class="row text-center">
-                  <div class="col-md-3"></div>
-                  <div class="col-md-3">
-                      <div class="form-check form-check-inline">
-                          <button type="button" class="btn btn-primary btn-lg">縞</button>
-                        </div>
-                  </div>
-                  <div class="col-md-4">
-                      <div class="form-check form-check-inline">
-                          <button type="button" class="btn btn-primary btn-lg">ドット</button>
-                        </div>
-                  <div class="col-md-2"></div>
-                  </div>
-              </div>
-              <div class="row text-center">
-                  <div class="col-md-4"></div>
-                  <div class="col-md-4">
-                    <input class="btn btn-primary btn-lg" type="submit" value="決定">
-                  </div>
-                  <div class="col-md-4"></div>
-              </div>
-              </div>
-            </div>
+  <div class="row text-center">
+    <div class="col-md-6 left">
+      <div class="col-md-2"></div>
+      <div class="col-md-8 ml-5">
+        <img src="../image/cat.png" class="text-center">
+      </div>
+      <div class="col-md-2"></div>
     </div>
+    <div class="col-md-6 right">
+      <div class="row text-center mt-4 ">
+        <div class="col-md-2"></div>
+        <div class="col-md-4 mt-1">
+          <p class="label">大きさ</p>
+        </div>
+        <div class="col-md-4">
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-primary">小</button>
+            <div class="ml-3">
+              <button type="button" class="btn btn-primary">中</button>
+            </div>
+            <div class="ml-3">
+              <button type="button" class="btn btn-primary">大</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+      <div class="row text-center mt-4 ">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+          <div class="row text-center">
+            <div class="col-md-2"></div>
+            <div class="col-md-2">
+              <button class="button red" type="submit"></button>
+            </div>
+            <div class="col-md-2 ml-3">
+              <button class="button pink" type="submit"></button>
+            </div>
+            <div class="col-md-2 ml-3">
+              <button class="button purple" type="submit"></button>
+            </div>
+            <div class="col-md-2 ml-3">
+              <button class="button blue" type="submit"></button>
+            </div>
+            <div class="col-md-2 ml-1"></div>
+          </div>
+          <div class="row text-center mt-2">
+            <div class="col-md-2"></div>
+            <div class="col-md-2">
+              <button class="button cyan" type="submit"></button>
+            </div>
+            <div class="col-md-2 ml-3">
+              <button class="button green" type="submit"></button></div>
+            <div class="col-md-2 ml-3">
+              <button class="button lime" type="submit"></button>
+            </div>
+            <div class="col-md-2 ml-3">
+              <button class="button yellow" type="submit"></button>
+            </div>
+            <div class="col-md-2"></div>
+          </div>
+          <div class="row text-center mt-2">
+            <div class="col-md-2"></div>
+            <div class="col-md-2">
+              <button class="button orange" type="submit"></button>
+            </div>
+            <div class="col-md-2 ml-3">
+              <button class="button peru" type="submit"></button>
+            </div>
+            <div class="col-md-2 ml-3">
+              <button class="button black" type="submit"></button>
+            </div>
+            <div class="col-md-2 ml-3">
+              <button class="button white" type="submit"></button>
+            </div>
+            <div class="col-md-2"></div>
+          </div>
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+      <div class="row text-center mt-4 ">
+        <div class="col-md-3"></div>
+        <div class="col-md-2">
+          <div class="form-check form-check-inline">
+            <button type="button" class="btn btn-primary btn-lg">縞</button>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div class="form-check form-check-inline">
+            <button type="button" class="btn btn-primary btn-lg">ドット</button>
+          </div>
+          <div class="col-md-2"></div>
+        </div>
+      </div>
+      <div class="row text-center mt-4 ">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+          <input class="btn btn-primary btn-lg" type="submit" value="決定">
+        </div>
+        <div class="col-md-4"></div>
+      </div>
+    </div>
+  </div>
   </div>
 </body>
 
