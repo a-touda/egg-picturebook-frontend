@@ -17,13 +17,13 @@
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
+  </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
+  </script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
+  </script>
 </head>
 
 <body>
@@ -43,12 +43,12 @@
         </div>
         <div class="col-md-4">
           <div class="btn-group" role="group" aria-label="Basic example">
-            <button type="button" class="btn btn-primary">小</button>
+            <button type="button" onclick="on_size_change(0)" class="btn btn-primary">小</button>
             <div class="ml-3">
-              <button type="button" class="btn btn-primary">中</button>
+              <button type="button" onclick="on_size_change(1)" class="btn btn-primary">中</button>
             </div>
             <div class="ml-3">
-              <button type="button" class="btn btn-primary">大</button>
+              <button type="button" onclick="on_size_change(2)" class="btn btn-primary">大</button>
             </div>
           </div>
         </div>
@@ -60,47 +60,47 @@
           <div class="row text-center">
             <div class="col-md-2"></div>
             <div class="col-md-2">
-              <button class="button red" type="submit"></button>
+              <button class="button red" onclick="on_color_change(0)" type="submit"></button>
             </div>
             <div class="col-md-2 ml-3">
-              <button class="button pink" type="submit"></button>
+              <button class="button pink" onclick="on_color_change(1)" type="submit"></button>
             </div>
             <div class="col-md-2 ml-3">
-              <button class="button purple" type="submit"></button>
+              <button class="button purple" onclick="on_color_change(2)" type="submit"></button>
             </div>
             <div class="col-md-2 ml-3">
-              <button class="button blue" type="submit"></button>
+              <button class="button blue" onclick="on_color_change(3)" type="submit"></button>
             </div>
             <div class="col-md-2 ml-1"></div>
           </div>
           <div class="row text-center mt-2">
             <div class="col-md-2"></div>
             <div class="col-md-2">
-              <button class="button cyan" type="submit"></button>
+              <button class="button cyan" onclick="on_color_change(4)" type="submit"></button>
             </div>
             <div class="col-md-2 ml-3">
-              <button class="button green" type="submit"></button></div>
+              <button class="button green" onclick="on_color_change(5)" type="submit"></button></div>
             <div class="col-md-2 ml-3">
-              <button class="button lime" type="submit"></button>
+              <button class="button lime" onclick="on_color_change(6)" type="submit"></button>
             </div>
             <div class="col-md-2 ml-3">
-              <button class="button yellow" type="submit"></button>
+              <button class="button yellow" onclick="on_color_change(7)" type="submit"></button>
             </div>
             <div class="col-md-2"></div>
           </div>
           <div class="row text-center mt-2">
             <div class="col-md-2"></div>
             <div class="col-md-2">
-              <button class="button orange" type="submit"></button>
+              <button class="button orange" onclick="on_color_change(8)" type="submit"></button>
             </div>
             <div class="col-md-2 ml-3">
-              <button class="button peru" type="submit"></button>
+              <button class="button peru" onclick="on_color_change(9)" type="submit"></button>
             </div>
             <div class="col-md-2 ml-3">
-              <button class="button black" type="submit"></button>
+              <button class="button black" onclick="on_color_change(10)" type="submit"></button>
             </div>
             <div class="col-md-2 ml-3">
-              <button class="button white" type="submit"></button>
+              <button class="button white" onclick="on_color_change(11)" type="submit"></button>
             </div>
             <div class="col-md-2"></div>
           </div>
@@ -111,12 +111,12 @@
         <div class="col-md-3"></div>
         <div class="col-md-2">
           <div class="form-check form-check-inline">
-            <button type="button" class="btn btn-primary btn-lg">縞</button>
+            <button type="button" onclick="on_pattern_change(0)" class="btn btn-primary btn-lg">縞</button>
           </div>
         </div>
         <div class="col-md-5">
           <div class="form-check form-check-inline">
-            <button type="button" class="btn btn-primary btn-lg">ドット</button>
+            <button type="button" onclick="on_pattern_change(1)" class="btn btn-primary btn-lg">ドット</button>
           </div>
           <div class="col-md-2"></div>
         </div>
@@ -124,12 +124,11 @@
       <div class="row text-center mt-4 ">
         <div class="col-md-4"></div>
         <div class="col-md-4">
-          <input class="btn btn-primary btn-lg" type="submit" value="決定">
+          <input class="btn btn-primary btn-lg" type="submit" onclick="on_enter_button" value="決定">
         </div>
         <div class="col-md-4"></div>
       </div>
     </div>
-  </div>
   </div>
 </body>
 
