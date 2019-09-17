@@ -12,3 +12,7 @@ window.onload = () => {
 function load_chars() {
     return get_chars();
 }
+
+function on_return_title_button() {
+    window.location.href = "../title/title.html";
+}

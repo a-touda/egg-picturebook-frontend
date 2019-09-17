@@ -6,7 +6,7 @@ function get_chars() {
     return JSON.parse(localStorage.getItem("CharsList"))
 }
 
-// キャラクターが図鑑に登録されているかを返します。
+// キャラクターが図鑑に登録されているかをtrueまたはfalseで返します。
 function has_char(id) {
     if (localStorage.getItem("CharsList") == undefined)
         localStorage.setItem("CharsList", JSON.stringify([]));
@@ -29,4 +29,16 @@ function set_char(id) {
     localStorage.setItem("CharsList", JSON.stringify(chars));
 
     return true
+}
+
+function get_char_id_from_data(size, color, pattern) {
+    return color * 100 + size * 10 + pattern;
+}
+
+function set_egg_data(id) {
+    localStorage.setItem("EggData", id)
+}
+
+function get_egg_data() {
+    localStorage.getItem("EggData", id)
 }
