@@ -36,6 +36,10 @@ function get_char_id_from_data(size, color, pattern) {
     return color * 100 + size * 10 + pattern;
 }
 
+function get_exclude_size_from_char_id(id) {
+    return Math.floor(Math.floor(id / 100) * 100 + id % 10);
+}
+
 // 作成した卵の情報を一時的に保存します。 
 function set_egg_data(id) {
     sessionStorage.setItem("EggData", id);
