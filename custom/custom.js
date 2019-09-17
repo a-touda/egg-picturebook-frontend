@@ -11,17 +11,29 @@ var patternVal = 0;
 function on_size_change(size) {
     sizeVal = size;
 
+    if (patternVal == 3) {
+        patternVal = 0;
+    }
+
     egg_update();
 }
 
 function on_color_change(color) {
     colorVal = color;
 
+    if (patternVal == 3) {
+        patternVal = 0;
+    }
+
     egg_update();
 }
 
 function on_pattern_change(pattern) {
     patternVal = pattern;
+
+    if (patternVal == 3) {
+        patternVal = 0;
+    }
 
     egg_update();
 }
@@ -46,14 +58,12 @@ function egg_update() {
 
     if (has_char(id)) {
         hint.textContent = "あれ、見たことあるかも...？";
-        console.log("登録済み");
     } else {
         hint.textContent = " ";
-        console.log("登録していない");
     }
 
 
     let elm = document.getElementById("egg");
-    elm.src = "../image/egg/" + id + ".png";
+    elm.src = "../image/egg/" + get_exclude_size_from_char_id(id) + ".png";
 
 }
