@@ -10,6 +10,12 @@ body {
   background-color: #ffff99 !important
 }
 
+.egg{
+  padding: 50px;
+  display: inline-block;
+  text-align: center;
+}
+
 .left {
   background-color: #ffff99;
 }
