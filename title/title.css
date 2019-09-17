@@ -1,3 +1,8 @@
 @charset "utf-8";
-p {font-size: 2.2em}
+p {font-size: 2.5em }
 body{background-color: #ffff99 !important}
+body{
+    background-repeat:repeat-x;
+    background-image:url("easteregg.png");
+    padding: 15px;
+    }
