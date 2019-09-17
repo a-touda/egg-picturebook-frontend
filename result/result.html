@@ -6,6 +6,9 @@
     <title>たまごずかん</title>
     <link rel="stylesheet" href="result.css">
 
+    <!-- マイライブラリ -->
+    <script src="../common/chars.js"></script>
+
     <!-- コントロールスクリプト -->
     <script src="result.js"></script>
 
@@ -26,29 +29,38 @@
 <body>
     <div class="container">
         <div class="row text-center">
-            <div class="col-md-6"><img src="../image/cat.png" class = "text-center"></div>
-            <div class="col-md-6">
-              <div class="row text-center" id="row">
-                <div class="col-md-6">
-                  大きさ
-                </div>
-                <div class="col-md-6">
-                    <div class="btn-group" role="group" aria-label="Basic example">
-                        <button type="button" class="btn btn-secondary">小</button>
-                        <button type="button" class="btn btn-secondary">中</button>
-                        <button type="button" class="btn btn-secondary">大</button>
-                      </div>
-                </div>
-              </div>
-              <div class="row text-center" id="row">
-
-              </div>
-              <div class="row text-center" id="row"></div>
-              <div class="row text-center" id="row"></div>
-              </div>
+            <div class="col-md-12">
+                <div class="image"><img id="char" src="../image/cat.png"></div>
             </div>
+        </div>
     </div>
-  </div>
+
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-12">
+                <p>生まれたよ！</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-12">
+                <p id="new-spawn"></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-12">
+                <div class="button">
+                    <button type="button" onclick="on_return_title_button()"
+                        class="btn btn-success rounded-pill btn-lg">タイトルにもどる</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
