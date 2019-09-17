@@ -34,7 +34,7 @@ function on_enter_button() {
 function egg_update() {
     let value = Math.floor(Math.random() * 100);
 
-    if (value % 10 == 0 && book_conp() && (color == 8 || color == 9 || color == 10 || color == 11)) {
+    if (value % 10 == 0 && book_comp() && (color == 8 || color == 9 || color == 10 || color == 11)) {
         patternVal = 2;
     };
 
