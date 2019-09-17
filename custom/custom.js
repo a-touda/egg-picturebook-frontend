@@ -35,7 +35,7 @@ function on_enter_button() {
 function egg_update() {
     let value = Math.floor(Math.random() * 100);
 
-    if (value % 10 == 0 && book_comp() && (color == 8 || color == 9 || color == 10 || color == 11)) {
+    if (value % 10 == 0 && book_comp() && (colorVal == 8 || colorVal == 9 || colorVal == 10 || colorVal == 11)) {
         patternVal = 2;
     };
 
@@ -48,7 +48,7 @@ function egg_update() {
         hint.textContent = "あれ、見たことあるかも...？";
         console.log("登録済み");
     } else {
-        hint.textContent = "　";
+        hint.textContent = " ";
         console.log("登録していない");
     }
 
