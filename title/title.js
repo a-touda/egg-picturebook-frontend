@@ -1,6 +1,4 @@
-window.onload = () => {
-    let id = get_egg_data();
-}
+window.onload = () => {}
 
 // 開始ボタンのスクリプト
 function on_title_start_button() {
