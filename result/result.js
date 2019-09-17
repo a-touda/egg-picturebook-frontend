@@ -15,7 +15,7 @@ window.onload = () => {
             spawn.innerText = "新しいいきもの！";
         }
     } else {
-        alert("何も起こらなかった。");
+        alert("なにも起こらなかった。");
         window.location.href = "../title/title.html"
     }
 }
