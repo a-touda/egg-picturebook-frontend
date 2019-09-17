@@ -3,3 +3,24 @@
 body {
     background-color: #ffff99 !important;
 }
+
+input[type="checkbox"]{
+  -webkit-appearance:none;
+  line-height:1.5em;
+  width:1.5em;
+  height:1.5em;
+  border:solid 1px #ddd;
+  background:-webkit-gradient(linear, left top, left bottom, from(#fff), to(#ccc));
+  -webkit-box-shadow:1px 1px 1px #888;
+  -webkit-border-radius:0.5em;
+  text-align:center;
+  color:#888;
+  font-weight:bold;
+}
+input[type="checkbox"]:before {
+  content:"★";
+  font-size:1.5em;
+} 
+input[type="checkbox"]:checked {
+  color:#ff7f00;
+}

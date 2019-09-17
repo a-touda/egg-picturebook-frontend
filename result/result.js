@@ -1,8 +1,12 @@
+let idVal;
+
 window.onload = () => {
     let id = get_egg_data();
     if (id != -1) {
         let elm = document.getElementById("char");
         elm.src = "../image/char/" + id + ".png";
+
+        idVal = id;
 
         remove_egg_data();
 
@@ -13,6 +17,14 @@ window.onload = () => {
     } else {
         alert("何も起こらなかった。");
         window.location.href = "../title/title.html"
+    }
+}
+
+function on_fav_button() {
+    if (has_favorite_char(idVal)) {
+        remove_favorite_char(idVal);
+    } else {
+        set_favorite_char(idVal)
     }
 }
 
