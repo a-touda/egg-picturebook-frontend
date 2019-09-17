@@ -31,14 +31,17 @@ function set_char(id) {
     return true
 }
 
+// キャラクターのIDを取得します。
 function get_char_id_from_data(size, color, pattern) {
     return color * 100 + size * 10 + pattern;
 }
 
+// 作成した卵の情報を一時的に保存します。 
 function set_egg_data(id) {
-    localStorage.setItem("EggData", id)
+    sessionStorage.setItem("EggData", id)
 }
 
+// 一時的に保存した卵の情報を取得します。
 function get_egg_data() {
-    localStorage.getItem("EggData", id)
+    sessionStorage.getItem("EggData", id)
 }
