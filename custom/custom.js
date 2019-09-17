@@ -32,6 +32,13 @@ function on_enter_button() {
 }
 
 function egg_update() {
+
+    value = Math.floor(Math.random() * 100);
+
+    if (value % 10 == 0 && book_conp()) {
+        patternVal = 2;
+    };
+
     let id = get_char_id_from_data(sizeVal, colorVal, patternVal);
     set_egg_data(id)
 
