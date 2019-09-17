@@ -1,5 +1,4 @@
 @charset "utf-8";
-
 .button {
   height: 50px;
   width: 50px;
@@ -10,8 +9,7 @@ body {
   background-color: #ffff99 !important
 }
 
-.egg{
-  padding: 50px;
+.egg {
   display: inline-block;
   text-align: center;
 }
