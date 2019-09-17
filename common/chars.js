@@ -22,13 +22,13 @@ function set_char(id) {
         localStorage.setItem("CharsList", JSON.stringify([]));
 
     if (has_char(id))
-        return false
+        return false;
 
     let chars = JSON.parse(localStorage.getItem("CharsList"));
     chars.push(id)
     localStorage.setItem("CharsList", JSON.stringify(chars));
 
-    return true
+    return true;
 }
 
 // キャラクターのIDを取得します。
@@ -38,7 +38,7 @@ function get_char_id_from_data(size, color, pattern) {
 
 // 作成した卵の情報を一時的に保存します。 
 function set_egg_data(id) {
-    sessionStorage.setItem("EggData", id)
+    sessionStorage.setItem("EggData", id);
 }
 
 // 一時的に保存した卵の情報を取得します。
@@ -46,10 +46,10 @@ function get_egg_data() {
     if (sessionStorage.getItem("EggData") == undefined)
         return -1;
 
-    return sessionStorage.getItem("EggData", id)
+    return sessionStorage.getItem("EggData");
 }
 
 function remove_egg_data() {
     if (sessionStorage.getItem("EggData") != undefined)
-        sessionStorage.removeItem("EggData")
+        sessionStorage.removeItem("EggData");
 }

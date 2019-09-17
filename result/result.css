@@ -1,10 +1,14 @@
 @charset "utf-8";
 
-p{
+p {
     font-size: 50px;
-    padding: 0px,0px,20px, 0px;
+    padding: 0px, 0px, 20px, 0px;
 }
 
-.image{
+.image {
     padding: 30px;
+}
+
+body {
+    background-color: #ffff99 !important
 }

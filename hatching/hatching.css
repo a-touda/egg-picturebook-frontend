@@ -1,14 +1,18 @@
 @charset "utf-8";
 
-.parent{
+.parent {
     text-align: center;
 }
 
-.box{
+.box {
     display: inline-block;
     margin: 50px;
     width: 500px;
-   height: 500px;
-   text-align: center;
-	background:#81C7D4;
+    height: 500px;
+    text-align: center;
+    background: #81C7D4;
+}
+
+body {
+    background-color: #ffff99 !important
 }
