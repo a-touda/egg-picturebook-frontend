@@ -1,9 +1,20 @@
+let names = [];
+let descs = [];
+
 window.onload = () => {
+    let elms = document.querySelectorAll("desc")
+    elms.forEach(element => {
+
+    });
+
     let chars = load_chars();
     chars.forEach(element => {
         let el = document.getElementById(get_exclude_size_from_char_id(element));
-        if (el != null)
+        if (el != null) {
             el.src = "../image/char/" + element + ".png";
+
+
+        }
     });
 }
 

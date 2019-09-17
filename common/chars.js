@@ -11,7 +11,7 @@ function has_char(id) {
     if (localStorage.getItem("CharsList") == undefined)
         localStorage.setItem("CharsList", JSON.stringify([]));
 
-    return JSON.parse(localStorage.getItem("CharsList")).indexOf(id) != -1
+    return JSON.parse(localStorage.getItem("CharsList")).indexOf(id + "") != -1
 }
 
 // キャラクターを図鑑に登録します。
@@ -80,7 +80,7 @@ function has_favorite_char(id) {
     if (localStorage.getItem("FavChar") == undefined)
         localStorage.setItem("FavChar", JSON.stringify([]))
 
-    return JSON.parse(localStorage.getItem("FavChar")).indexOf(id) != -1;
+    return JSON.parse(localStorage.getItem("FavChar")).indexOf(id + "") != -1;
 }
 
 function set_favorite_char(id) {
