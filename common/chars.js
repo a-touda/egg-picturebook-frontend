@@ -57,3 +57,16 @@ function remove_egg_data() {
     if (sessionStorage.getItem("EggData") != undefined)
         sessionStorage.removeItem("EggData");
 }
+
+function book_conp() {
+    var list = get_chars();
+    var ev = [];
+    list.forEach(element => {
+        var sid = get_exclude_size_from_char_id(element);
+        if (ev.indexOf(sid) == -1) {
+            ev.push(sid);
+        }
+    });
+
+    return ev.length >= 36;
+}
