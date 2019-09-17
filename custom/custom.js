@@ -34,5 +34,7 @@ function on_enter_button() {
 function egg_update() {
     let id = get_char_id_from_data(sizeVal, colorVal, patternVal);
     set_egg_data(id)
-    // DOM操作
+
+    let elm = document.getElementById("egg");
+    // Create Canvas
 }
