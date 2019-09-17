@@ -1,2 +1,67 @@
 @charset "utf-8";
+.button {
+  height: 50px;
+  width: 50px;
+  border-style: none;
+}
 
+.left {
+  background-color: #ffff99;
+}
+
+.label {
+  color: white;
+  font-size: 20px;
+}
+
+.right {
+  background-color: #444444;
+}
+
+.red {
+  background-color: red;
+}
+
+.pink {
+  background-color: pink;
+}
+
+.purple {
+  background-color: purple;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.cyan {
+  background-color: cyan;
+}
+
+.green {
+  background-color: green;
+}
+
+.lime {
+  background-color: lime;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.peru {
+  background-color: peru;
+}
+
+.black {
+  background-color: black;
+}
+
+.white {
+  background-color: white;
+}
