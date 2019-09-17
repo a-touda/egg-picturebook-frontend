@@ -1,10 +1,7 @@
-const CharsCount = 5;
-
 window.onload = () => {
     let chars = load_chars();
     chars.forEach(element => {
         let el = document.getElementById(get_exclude_size_from_char_id(element));
-        console.log(get_exclude_size_from_char_id(element));
         if (el != null)
             el.src = "../image/char/" + element + ".png";
     });
