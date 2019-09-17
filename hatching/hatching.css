@@ -10,7 +10,29 @@
     width: 500px;
     height: 500px;
     text-align: center;
-    background: #81C7D4;
+}
+
+.swing {
+    animation-name: swing;
+    animation-duration: 4s;
+    animation-delay: .45s;
+}
+
+@keyframes swing {
+0%,100% { 
+    -webkit-transform-origin: bottom center; 
+}
+10% { -webkit-transform: rotate(-15deg); }  
+20% { -webkit-transform: rotate(10deg); }
+30% { -webkit-transform: rotate(-5deg); }   
+40% { -webkit-transform: rotate(5deg); }    
+50% { -webkit-transform: rotate(-3deg); }
+
+60% { -webkit-transform: rotate(2deg); }
+70% { -webkit-transform: rotate(-2deg); }
+80% { -webkit-transform: rotate(1deg); }
+90% { -webkit-transform: rotate(-1deg); }
+100% { -webkit-transform: rotate(0deg); }
 }
 
 body {
