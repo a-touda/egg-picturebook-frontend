@@ -58,7 +58,8 @@ function remove_egg_data() {
         sessionStorage.removeItem("EggData");
 }
 
-function book_conp() {
+// 図鑑のコンプリートチェック
+function book_comp() {
     var list = get_chars();
     var ev = [];
     list.forEach(element => {
