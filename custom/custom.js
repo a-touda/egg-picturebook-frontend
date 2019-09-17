@@ -36,7 +36,7 @@ function egg_update() {
     let value = Math.floor(Math.random() * 100);
 
     if (value % 10 == 0 && book_comp() && (colorVal == 8 || colorVal == 9 || colorVal == 10 || colorVal == 11)) {
-        patternVal = 2;
+        patternVal = 3;
     };
 
     let id = get_char_id_from_data(sizeVal, colorVal, patternVal);
